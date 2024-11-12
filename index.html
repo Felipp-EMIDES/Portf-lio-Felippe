@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+
+    </head>
+<body>
+    <div class="part1">
+        <h1>Olá, preencha seus dados para realizar sua incrição</h1>
+        <label for="nome">Nome Completo* <br> <input type="text" id="nomeid" placeholder="nome"></label> 
+           
+       
+        <label>E-mail* <br> <input type="text" id="emailid" placeholder="email"></label>
+            
+
+        <label>Data de Nascimento* <br> <input type="date" id="Dataid"></label> 
+           
+
+        <label>Celuar Principal* <br> <input type="text" id="numeroid" placeholder="(xx) x xxxx-xxxx"></label>
+
+        <label>Telefone Residencial* <input type="text" id="telefoneid" ></label>
+
+        <label>Gênero: </label>
+        <label>Masculino<input type="checkbox"> Feminino<input type="checkbox"></label>
+       
+        <label>Forma de ingresso* 
+            <select id="ingresso">
+                <option value="1">Normal</option>
+                <option value="2">Integrado</option>
+            </select>
+        </label>
+
+        <label id="curso">Curso* 
+                      <select>
+                        <option value="1">Desenvolvimento de Sistemas</option>
+                        <option value="2">Programação de Jogos Digitais</option>
+                        <option value="3">Administração e Gestão</option>
+                        <option value="4">Alimentos e Bebidas.</option>
+                        <option value="5">Construção Civil e Design de Mobiliário.</option>
+                        <option value="6">Design de Moda, Têxtil, Vestuário, Calçados e Joalheria.</option>
+                        <option value="7">Design Gráfico, Papel, Celulose, Gráfica e Editorial.</option>
+                        <option value="8">Fabricação Mecânica e Manutenção Industrial.</option>
+                        <option value="9">Logística e Transporte.</option>
+                        <option value="10">Automotiva</option>
+                        <option value="11">Metalurgia e Soldagem</option>
+                        <option value="12">Refrigeração e Climatização</option>
+                    </select>
+
+        </label>
+
+        <label id="habilitação">Habilitação:
+            <select>
+                <option value="1">EAD</option>
+                <option value="2">PRESENCIAL</option>
+                <option value="3">SEMIPRESENCIAL</option>
+            </select>
+        </label>
+
+        <label>Turno:
+            <select>
+                <option value="1">MANHÃ</option>
+                <option value="2">TARDE</option>
+                <option value="3">NOITE</option>
+            </select>
+        </label>
+        
+        <div class="part2">
+
+            <label>Possue algum cupom de desconto? <input type="text" placeholder="Insira o cupom de desconto"> <input type="button" placeholder="Inserir Cupom"></label>
+    
+            <label>Data(Prova) <input type="date"  id="provaid"></label>
+    
+            <label>Horário(Prova)* 
+                <select id="horarioid">
+                    <option value="1">8:00 am</option>
+                    <option value="2">9:00 am</option>
+                    <option value="3">10:00 am</option>
+                    <option value="4">13:00 pm</option>  
+                    <option value="5">14:00 pm</option>
+                    <option value="6">15:00 pm</option> 
+                </select>
+            
+            </label>
+    
+            <label>Local da Prova*
+                <select id="localid">
+                    <option value="1">SENAI-CETCC(Coelho e Campos)</option>
+                    <option value="2">SENAI-CETAF(Augusto Franco)</option>
+                    <option value="3">SESI-CEFEM</option>
+                </select>
+    
+            </label>
+    
+            <label>CPF* <input type="text" placeholder="XXX.XXX.XXX-XX" id="cpfid"></label>
+    
+            <label>RG* <input type="text" placeholder="XX.XXX.XXX-X" id="rgid"></label>
+    
+            <label>Nacionalidade* <input type="text" id="nacionalidadeid"></label>
+    
+            <label>CEP* <input type="text" id="cepid"></label>
+    
+            <label>Endereço* <input type="text" id="endereçoid"></label>
+    
+            <label>N* <input type="text"></label>
+    
+            <label>Complemento <input type="text" id="complementoid"></label>
+    
+            <label>Bairro <input type="text" id="bairroid"></label>
+    
+            <label>Cidade <input type="text" id="cidadeid"></label>
+            <br>
+            <label> Utilizar nome social? <br> Masculino<input type="checkbox"> Feminino<input type="checkbox">  </label>
+            <br>
+            <label>Necessidade especiais <br> Sim<input value="1"> Não<input type="checkbox"></label>
+            <br>
+            <button onclick="Enviar()">Enviar seus dados</button>
+        </div>
+
+
+    </div>
+
+    
+
+
+   <script src="java.js"></script>    
+</body>
+</html>

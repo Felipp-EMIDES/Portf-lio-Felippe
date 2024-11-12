@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Caixa - Supermercado</title>
+    <link rel="stylesheet" href="Mercadinho.css"> 
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Caixa - Supermercado</h1>
+
+        <div class="input-group">
+            <label for="produto">Nome do Produto</label>
+            <input type="text" id="produto" placeholder="Produto">
+        </div>
+
+        <div class="input-group">
+            <label for="quantidade">Quantidade</label>
+            <input type="number" id="quantidade" min="1" value="1">
+        </div>
+
+        <div class="input-group">
+            <label for="valor">Valor Unitário (R$)</label>
+            <input type="number" id="valor" step="0.01" placeholder="0.00">
+        </div>
+
+        <button onclick="adicionarProduto()">Adicionar Produto</button>
+
+        <h2>Carrinho de Compras</h2>
+        <table id="carrinho">
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Valor Unitário (R$)</th>
+                    <th>Valor Total (R$)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Produtos adicionados aparecerão aqui -->
+            </tbody>
+        </table>
+
+        <div class="totais">
+            <h3>Total a Pagar: R$ <span id="total">0.00</span></h3>
+            <button onclick="finalizarCompra()">Finalizar Venda</button>
+        <p>50% DE DESCONTO NO TERCEIRO ITEM DE MESMO TIPO !!!!!</p>
+        </div>
+    </div>
+
+    <script src="Mercadinho.js"></script> 
+</body>
+</html>
